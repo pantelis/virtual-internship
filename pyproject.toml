@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "virtual-internship"
+version = "0.1.0"
+description = ""
+authors = ["Pantelis Monogioudis <pantelis.monogioudis@aegean.ai>"]
+readme = "README.md"
+packages = [{include = "virtual_internship"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+jupyter-book = "^0.15.1"
+sphinx-book-theme = ">=1.0.0rc1"
+sphinxcontrib-youtube = "^1.2.0"
+sphinxcontrib-svg2pdfconverter = "^1.2.1"
+sphinx-proof = "^0.1.3"
+sphinx-inline-tabs = "^2022.1.2b11"
+sphinxext-rediraffe = "^0.2.7"
+sphinx-autobuild = "^2021.3.14"
+sphinxcontrib-mermaid = "^0.8"
+sphinxcontrib-seqdiag = "^3.0.0"
+diagrams = "^0.23.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

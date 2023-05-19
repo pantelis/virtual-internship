@@ -1,0 +1,50 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/anaconda
+{
+	"name": "virtual-internship",
+	"build": { 
+		"context": "..",
+		"dockerfile": "Dockerfile",
+		"args": {
+			"POETRY_VERSION": "1.4.1"
+		}
+	},
+
+	"remoteEnv": {
+		"PATH": "${localEnv:PATH}:/home/vscode/.local/bin:/usr/local/cuda/bin",
+		"LD_LIBRARY_PATH": "/usr/local/cuda/lib64",
+		"XLA_FLAGS": "--xla_gpu_cuda_data_dir=/usr/local/cuda/",
+		"CUBLAS_WORKSPACE_CONFIG": ":4096:2"  // https://pytorch.org/docs/stable/generated/torch.nn.LSTM.html
+	},
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+		"ghcr.io/devcontainers/features/nvidia-cuda:1": {
+			"installCudnn": true,
+			"cudaVersion": "11.8",
+			"cudnnVersion": "8.6.0.163"
+		}
+	},
+
+	"runArgs": ["--runtime=nvidia", "--gpus", "all"],
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [8000],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "curl -sSL https://install.python-poetry.org | python3 - && poetry config virtualenvs.in-project true && poetry update",
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	"remoteUser": "vscode",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.vscode-pylance",
+				"ExecutableBookProject.myst-highlight",
+				"GitHub.copilot",
+				"njpwerner.autodocstring"
+			]
+		}
+	},
+	"postStartCommand": "poetry run sphinx-autobuild virtual-internship _build/html"
+}
