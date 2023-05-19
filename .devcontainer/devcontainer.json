@@ -17,16 +17,16 @@
 		"CUBLAS_WORKSPACE_CONFIG": ":4096:2"  // https://pytorch.org/docs/stable/generated/torch.nn.LSTM.html
 	},
 
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	"features": {
-		"ghcr.io/devcontainers/features/nvidia-cuda:1": {
-			"installCudnn": true,
-			"cudaVersion": "11.8",
-			"cudnnVersion": "8.6.0.163"
-		}
-	},
+	// // Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {
+	// 	"ghcr.io/devcontainers/features/nvidia-cuda:1": {
+	// 		"installCudnn": true,
+	// 		"cudaVersion": "11.8",
+	// 		"cudnnVersion": "8.6.0.163"
+	// 	}
+	// },
 
-	"runArgs": ["--runtime=nvidia", "--gpus", "all"],
+	// "runArgs": ["--runtime=nvidia", "--gpus", "all"],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [8000],
