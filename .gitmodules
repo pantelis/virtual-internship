@@ -1,0 +1,3 @@
+[submodule "virtual-internship/aiml-common"]
+	path = virtual-internship/aiml-common
+	url = https://github.com/pantelis/aiml-common.git
