@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "virtual_internship"}]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.10,<3.12"
 jupyter-book = "^0.15.1"
 sphinx-book-theme = ">=1.0.0rc1"
 sphinxcontrib-youtube = "^1.2.0"
