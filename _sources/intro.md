@@ -95,6 +95,8 @@ Explore this  {fas}`arrow-right`
 
 ## Tier 1 Projects
 
+::::{card-carousel} 3
+
 :::{card}
 :margin: 3
 :class-body: text-center
@@ -107,13 +109,17 @@ Explore this  {fas}`arrow-right`
 :height: 100
 ```
 
-This project teaching how to put together simple scenes, ask questions and get the right answers by combining symbolic and neural representations.  
+This project will teach you how to put together simple scenes, ask questions and get the right answers by combining symbolic and neural representations.  
 
 +++
 Explore this  {fas}`arrow-right`
 :::
 
+::::
+
 ## Tier 2 Projects
+
+::::{card-carousel} 3
 
 :::{card}
 :margin: 3
@@ -127,9 +133,28 @@ Explore this  {fas}`arrow-right`
 :height: 100
 ```
 
-This project teaching how to do transfer learning on the semantic segmentation task.
+This project will teach you how to do transfer learning on the semantic segmentation task.
 
 +++
 Explore this  {fas}`arrow-right`
 :::
 
+:::{card}
+:margin: 3
+:class-body: text-center
+:class-header: bg-light text-center
+:link: https://pantelis.github.io/virtual-internship/aiml-common/projects/semantic-segmentation/index.html
+
+**Model Optimization**
+^^^
+```{image} https://github.com/pantelis/aiml-common/blob/master/projects/semantic-segmentation/satellites.jpeg?raw=true
+:height: 100
+```
+
+This project teach you how to optimize a semantic segmentation model. 
+
++++
+Explore this  {fas}`arrow-right`
+:::
+
+::::
