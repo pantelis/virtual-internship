@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Transfer Learning for Custom Datasets in the Small-Data Regime &#8212; Virtual Internship</title>
+    <title>Semantic Segmentation of Satellite Imagery &#8212; Virtual Internship</title>
   
   
   
@@ -66,13 +66,12 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
     <script src="https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'aiml-common/projects/transfer-learning-home-depot/index';</script>
-    <link rel="canonical" href="https://pantelis.github.io/virtual-internship/aiml-common/projects/transfer-learning-home-depot/index.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'aiml-common/projects/semantic-segmentation/index';</script>
+    <link rel="canonical" href="https://pantelis.github.io/virtual-internship/aiml-common/projects/semantic-segmentation/index.html" />
     <link rel="shortcut icon" href="../../../_static/logo.ico"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Semantic Segmentation of Satellite Imagery" href="../semantic-segmentation/index.html" />
-    <link rel="prev" title="World Models - Can agents learn inside of their own dreams?" href="../world-models/index.html" />
+    <link rel="prev" title="Transfer Learning for Custom Datasets in the Small-Data Regime" href="../transfer-learning-home-depot/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -162,8 +161,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../ns-vqa/index.html">Separating Perception and Reasoning via Neurosymbolic VQA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../world-models/index.html">World Models - Can agents learn inside of their own dreams?</a></li>
 </ul></li><li class="toctree-l0 has-children"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Tier-2 Projects</span></p><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="label-parts" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Transfer Learning for Custom Datasets in the Small-Data Regime</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../semantic-segmentation/index.html">Semantic Segmentation of Satellite Imagery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../transfer-learning-home-depot/index.html">Transfer Learning for Custom Datasets in the Small-Data Regime</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Semantic Segmentation of Satellite Imagery</a></li>
 </ul></li></ul>
     </div>
 </nav></div>
@@ -234,7 +233,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/pantelis/virtual-internship/edit/master/virtual-internship/aiml-common/projects/transfer-learning-home-depot/index.md" target="_blank"
+      <li><a href="https://github.com/pantelis/virtual-internship/edit/master/virtual-internship/aiml-common/projects/semantic-segmentation/index.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -251,7 +250,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/pantelis/virtual-internship/issues/new?title=Issue%20on%20page%20%2Faiml-common/projects/transfer-learning-home-depot/index.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/pantelis/virtual-internship/issues/new?title=Issue%20on%20page%20%2Faiml-common/projects/semantic-segmentation/index.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -281,7 +280,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../../_sources/aiml-common/projects/transfer-learning-home-depot/index.md" target="_blank"
+      <li><a href="../../../_sources/aiml-common/projects/semantic-segmentation/index.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -363,7 +362,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Transfer Learning for Custom Datasets in the Small-Data Regime</h1>
+    <h1>Semantic Segmentation of Satellite Imagery</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -373,11 +372,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#milestone-1-environment-preparation-10-points">Milestone 1: Environment Preparation (10 points)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#milestone-2-data-acquisition-20-points">Milestone 2: Data Acquisition (20 points)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#milestone-3-annotation-20-points">Milestone 3: Annotation (20 points)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#milestone-4-semantic-segmentation-40-points">Milestone 4: Semantic Segmentation (40 points)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#milestone-5-documentation-10-points">Milestone 5: Documentation (10 points)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#milestone-1-environment-preparation">Milestone 1: Environment Preparation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#milestone-2-perform-baseline-semantic-segmentation">Milestone 2: Perform Baseline Semantic Segmentation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#milestone-3-hyperparameter-optimization">Milestone 3: Hyperparameter Optimization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#milestone-4-model-compression">Milestone 4: Model Compression</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#milestone-5-neural-architecture-search">Milestone 5: Neural Architecture Search</a></li>
 </ul>
             </nav>
         </div>
@@ -389,63 +388,102 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="transfer-learning-for-custom-datasets-in-the-small-data-regime">
-<h1>Transfer Learning for Custom Datasets in the Small-Data Regime<a class="headerlink" href="#transfer-learning-for-custom-datasets-in-the-small-data-regime" title="Permalink to this heading">#</a></h1>
-<p>This project will walk you through the development of a complete transfer learning pipeline from annotation to producing performance results of a network that performs semantic segmentation in the so called small data regime i.e. when the annotated examples per category are very few.</p>
-<p>You have been hired in the data science team at Home Depot and you are tasked to semantically segment objects shown in the so called “buyers guide” videos. You are to segment only objects that their customers can purchase in their stores.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="semantic-segmentation-of-satellite-imagery">
+<h1>Semantic Segmentation of Satellite Imagery<a class="headerlink" href="#semantic-segmentation-of-satellite-imagery" title="Permalink to this heading">#</a></h1>
+<p><img alt="" src="../../../_images/satellites.jpeg" /></p>
+<p>You have been hired in the data science team at NASA and you are tasked to semantically segment objects that can be seen from space.  <strong>You need to use PyTorch for this project.</strong></p>
 <p><strong>If you miss a milestone deadline you will be forfeited the corresponding points.</strong></p>
-<section id="milestone-1-environment-preparation-10-points">
-<h2>Milestone 1: Environment Preparation (10 points)<a class="headerlink" href="#milestone-1-environment-preparation-10-points" title="Permalink to this heading">#</a></h2>
-<p>In this stage you will be working with CVAT - you need to install CVAT locally to your laptop/desktop and we urge you to follow the docker setup instructions <a class="reference external" href="https://opencv.github.io/cvat/docs/administration/basics/installation/">here</a></p>
-<p>PS: You can also create an account on the <a class="reference external" href="http://cvat.ai">cvat.ai</a> site but we dont offer any guarantees that the project can be delivered in its entirety with a cvat instance that is not managed by you.</p>
-<p>Submit a github repository with a branch titled ‘milestone-1’ with the readme file containing the CVAT installation instructions you followed and a screenshot of your computer of the login screen. Add as collaborator the TA.</p>
+<section id="milestone-1-environment-preparation">
+<h2>Milestone 1: Environment Preparation<a class="headerlink" href="#milestone-1-environment-preparation" title="Permalink to this heading">#</a></h2>
+<p>You are given a seed repo for this project located <a class="reference external" href="https://github.com/bnsreenu/python_for_microscopists">here</a> - look under the directory <code class="docutils literal notranslate"><span class="pre">228_semantic_segmentation_of_aerial_imagery_using_unet</span></code>.</p>
+<ol class="arabic simple">
+<li><p>Create a new repo under one Github account of a member of your team.</p></li>
+<li><p>If you are working on own laptops/desktop: Checkout the code of the seed repo under src/ and incorporate <a class="reference external" href="https://python-poetry.org/">poetry</a> to allow your virtual environment to set up properly.</p></li>
+<li><p>If you are working in Colab:  use pip to install all dependencies bearing in mind that Colab has built in TF/Pytorch installations.</p></li>
+<li><p>Install <a class="reference external" href="https://nni.readthedocs.io/en/stable/index.html">NNI</a>.  For Colab users: ensure that you have followed the instructions <a class="reference external" href="https://nni.readthedocs.io/en/stable/sharings/nni_colab_support.html">here</a>  to allow the UI to be visible.</p></li>
+<li><p>Submit the github repository URL with a branch titled ‘milestone-1’ with the <a class="reference external" href="http://README.md">README.md</a> file containing the installation instructions you followed and a screenshot of your computer of the NNI UI screen. Add as collaborator the TA.</p></li>
+</ol>
 </section>
-<section id="milestone-2-data-acquisition-20-points">
-<h2>Milestone 2: Data Acquisition (20 points)<a class="headerlink" href="#milestone-2-data-acquisition-20-points" title="Permalink to this heading">#</a></h2>
+<section id="milestone-2-perform-baseline-semantic-segmentation">
+<h2>Milestone 2: Perform Baseline Semantic Segmentation<a class="headerlink" href="#milestone-2-perform-baseline-semantic-segmentation" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Go to the <a class="reference external" href="https://www.homedepot.com/c/alp/diy-projects-and-ideas-ab/azzz-ab">HD site</a> and in the left panel select the home area (room) you have been assigned:</p>
-<ol class="arabic simple">
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=cc0Sy4VpfT0">kitchen</a></p></li>
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=-Nkm58wSiKg">bathroom</a></p></li>
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=2mnShtGjRXM">bedroom</a>,</p></li>
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=AvKxzw5bjuc">garage</a>,</p></li>
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=gdcFrD-7hcI">basement</a>.</p></li>
-</ol>
-</li>
-</ol>
-<p>Project Team 1 is assigned home area 1 (Kitchen) just like Project Team 6, Project Team 3 is assigned home area 3 (Bedroom) just like Project Team 8 and so on …</p>
-<ol class="arabic simple" start="2">
-<li><p>Select 10 product categories (eg sinks, faucets) that HD sells in each room and that are shown on their promotional video</p></li>
+<li><p>Watch this video that introduces <a class="reference external" href="https://www.kaggle.com/datasets/humansintheloop/semantic-segmentation-of-aerial-imagery">the dataset</a> and the approach (<a class="reference external" href="https://arxiv.org/abs/1505.04597">UNet</a>).</p></li>
 </ol>
 <div class="video_wrapper" style="">
-<iframe allowfullscreen="true" src="https://www.youtube.com/embed/poup0NZ2D40" style="border: 0; height: 345px; width: 560px">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/jvZm8REF2KY" style="border: 0; height: 345px; width: 560px">
 </iframe></div><ol class="arabic simple" start="2">
-<li><p>You will need to scrape using <a class="reference external" href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">beautiful soup</a> or retrieve using the <a class="reference external" href="https://developers.google.com/custom-search/v1/overview">Google Custom Search API</a> (better solution), 100 images of each of the selected product categories. Make sure you select products that are not included on the video, meaning if a specific sink is shown on the video, you srape / search different but similar sinks.</p></li>
+<li><p>Run the segmentation and produce plots of (a) 10 segmented images from the validation set (b) training and validation loss vs epochs, (b) Precision and Recall values</p></li>
+<li><p>Submit the github repository URL with a branch titled ‘milestone-2’ and with the docs/ folder containing the markdown file <a class="reference external" href="http://baseline-performance.md">baseline-performance.md</a> where you explain in 2 pages including figures UNet and in separate pages the results obtained.</p></li>
 </ol>
-<p>Submit a Github branch titled ‘data-acquisition’ and a markdown file called <a class="reference external" href="http://data-acquisition.md">data-acquisition.md</a> containing the code that achieve the milestone and a <code class="docutils literal notranslate"><span class="pre">pytest</span></code> test  file that can show that the code works.</p>
 </section>
-<section id="milestone-3-annotation-20-points">
-<h2>Milestone 3: Annotation (20 points)<a class="headerlink" href="#milestone-3-annotation-20-points" title="Permalink to this heading">#</a></h2>
+<section id="milestone-3-hyperparameter-optimization">
+<h2>Milestone 3: Hyperparameter Optimization<a class="headerlink" href="#milestone-3-hyperparameter-optimization" title="Permalink to this heading">#</a></h2>
+<p>You are now tasked to improve baseline performance.</p>
 <ol class="arabic simple">
-<li><p>Upload the images in your CVAT instance and annotate all object categories. This is a manual step and you will need to use the <a class="reference external" href="https://cvlsegmentation.github.io/dextr/">DEXTR cutter</a>.</p></li>
-<li><p>Write a 2 page summary on how DEXTR works that can be understood by experts.</p></li>
+<li><p>Consult the following table:</p></li>
 </ol>
-<p>Ensure that the annotations can be read and seen by the <a class="reference external" href="https://voxel51.com/docs/fiftyone/tutorials/cvat_annotation.html">fiftyone tool</a></p>
-<p>Submit a Github branch titled ‘annotation’ containing the annotated dataset in MS COCO format and a markdown file called <a class="reference external" href="http://annotation.md">annotation.md</a> containing the DEXTR description and the link with the 1000 annotated images (10 product categories x 100 images per category. You can collaborate with other teams on the annotation task to share the load.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Index</p></th>
+<th class="head"><p>Method</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>TPE</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Anneal</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Evolution</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>SMAC</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Hyperband</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Metis</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>BOHB</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>GP</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>DNGO</p></td>
+</tr>
+</tbody>
+</table>
+<p>Use your student ID last digit to select the method. For example if your student ID is 12345678 then you will use the 8th method in the table.</p>
+<ol class="arabic simple" start="2">
+<li><p>Incorporate the Hyperparameter Optimization (HPO) method in your code and run the code to obtain the best (a) 10 segmented images from the validation set (b) training and validation loss vs epochs, (b) Precision and Recall values</p></li>
+<li><p>Submit the github repository URL with a branch titled ‘milestone-3’ and with the docs/ folder containing the markdown file <a class="reference external" href="http://hyperparameter-optimization.md">hyperparameter-optimization.md</a> where you explain in 2 pages including figures the method and in separate pages the results obtained.</p></li>
+</ol>
+<p>If you run out of compute resources i.e in Colab the GPU is taken away after few hours or your dedicated machine runs for ever or very slow, reduce the search space to produce results and achieve the milestone. If you reduce the space without any reason you will be deducted points.</p>
 </section>
-<section id="milestone-4-semantic-segmentation-40-points">
-<h2>Milestone 4: Semantic Segmentation (40 points)<a class="headerlink" href="#milestone-4-semantic-segmentation-40-points" title="Permalink to this heading">#</a></h2>
-<p>Use <a class="reference external" href="https://github.com/ashleve/lightning-hydra-template">this</a> template or an equivalent template if you are using Tensorflow to implement a semantic segmentation pipeline based on either MaskRCNN (project team number is odd number) or UNet (project team number is even)  that will successfully segment the selected objects on the input room video.</p>
-<p>You can use frameworks such as <a class="github reference external" href="https://github.com/facebookresearch/detectron2">facebookresearch/detectron2</a> for this task.</p>
-<p>Ensure you describe how you tuned and what values you ended up using for the <a class="reference external" href="https://medium.com/analytics-vidhya/taming-the-hyper-parameters-of-mask-rcnn-3742cb3f0e1b">network hyperparameters</a></p>
-<p>Submit a Github branch titled ‘segmentation’ containing  the segmentation code and a  markdown file called <a class="reference external" href="http://segmentation.md">segmentation.md</a> containing the full description of the semantic segmentation network you used and the performance results you got.</p>
+<section id="milestone-4-model-compression">
+<h2>Milestone 4: Model Compression<a class="headerlink" href="#milestone-4-model-compression" title="Permalink to this heading">#</a></h2>
+<p>You are now tasked to do compress your model to fit a computer that may not have accelerator (GPUs) or enough memory to fit the original baseline model. Dont underestimate the impact of model compression - managing inference costs are the ranked consistently Number 1 goal for every enterprise that uses ML/AI.</p>
+<ol class="arabic simple">
+<li><p>Read about <a class="reference external" href="https://arxiv.org/abs/1503.02531">the seminal paper</a></p></li>
+<li><p>Implement <a class="reference external" href="https://nni.readthedocs.io/en/stable/sharings/kd_example.html">Knowledge Distillation (KD)</a></p></li>
+<li><p>Run the code to obtain the student’s network (a) 10 segmented images from the validation set (b) training and validation loss vs epochs, (b) Precision and Recall values</p></li>
+<li><p>Submit the github repository URL with a branch titled ‘milestone-4’ and with the docs/ folder containing the markdown file <a class="reference external" href="http://knowledge-distillation.md">knowledge-distillation.md</a> where you explain in 2 pages including figures the method and in separate pages the results obtained.</p></li>
+</ol>
 </section>
-<section id="milestone-5-documentation-10-points">
-<h2>Milestone 5: Documentation (10 points)<a class="headerlink" href="#milestone-5-documentation-10-points" title="Permalink to this heading">#</a></h2>
-<p>Use <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">Jupyterbook</a> to bundle together all the markdown files and publish the project in html - do not commit your html build in github.</p>
-<p>Include a copy of the produced video in your Github, showing the segmentations in real time.</p>
-<p>Ensure that you merge all the branches into main branch and submit the main branch  as the final project deliverable.</p>
-<p>PS: You can upload it to your youtube channel and link it to your Github profile if you like.</p>
+<section id="milestone-5-neural-architecture-search">
+<h2>Milestone 5: Neural Architecture Search<a class="headerlink" href="#milestone-5-neural-architecture-search" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Review the <a class="reference external" href="https://arxiv.org/abs/1808.05377">seminal paper</a>.</p></li>
+<li><p>Select the <a class="reference external" href="https://arxiv.org/pdf/1806.09055.pdf">DARTS NAS method</a> in NNI. For its implementation details see <a class="reference external" href="https://github.com/quark0/darts">here</a>.</p></li>
+<li><p>Incorporate the NAS method in your code and run the code to obtain the best (a) 10 segmented images from the validation set (b) training and validation loss vs epochs, (b) Precision and Recall values</p></li>
+<li><p>Submit the github repository URL with a branch titled ‘milestone-5’ and with the docs/ folder containing the markdown file <a class="reference external" href="http://neural-arch-search.md">neural-arch-search.md</a> where you explain in 2 pages including figures the method and in separate pages the results obtained.</p></li>
+</ol>
+<p>If you run out of compute resources i.e in Colab the GPU is taken away after few hours or your dedicated machine runs for ever or very slow, reduce the search space to produce results and achieve the milestone.</p>
 </section>
 </section>
 
@@ -462,7 +500,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./aiml-common/projects/transfer-learning-home-depot"
+            path: "./aiml-common/projects/semantic-segmentation"
         },
         predefinedOutput: true
     }
@@ -481,22 +519,13 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../world-models/index.html"
+       href="../transfer-learning-home-depot/index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">World Models - Can agents learn inside of their own dreams?</p>
+        <p class="prev-next-title">Transfer Learning for Custom Datasets in the Small-Data Regime</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="../semantic-segmentation/index.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Semantic Segmentation of Satellite Imagery</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
@@ -516,11 +545,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#milestone-1-environment-preparation-10-points">Milestone 1: Environment Preparation (10 points)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#milestone-2-data-acquisition-20-points">Milestone 2: Data Acquisition (20 points)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#milestone-3-annotation-20-points">Milestone 3: Annotation (20 points)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#milestone-4-semantic-segmentation-40-points">Milestone 4: Semantic Segmentation (40 points)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#milestone-5-documentation-10-points">Milestone 5: Documentation (10 points)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#milestone-1-environment-preparation">Milestone 1: Environment Preparation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#milestone-2-perform-baseline-semantic-segmentation">Milestone 2: Perform Baseline Semantic Segmentation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#milestone-3-hyperparameter-optimization">Milestone 3: Hyperparameter Optimization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#milestone-4-model-compression">Milestone 4: Model Compression</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#milestone-5-neural-architecture-search">Milestone 5: Neural Architecture Search</a></li>
 </ul>
   </nav></div>
 
