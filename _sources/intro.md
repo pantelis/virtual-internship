@@ -157,4 +157,22 @@ This project teach you how to optimize a semantic segmentation model.
 Explore this  {fas}`arrow-right`
 :::
 
+:::{card}
+:margin: 3
+:class-body: text-center
+:class-header: bg-light text-center
+:link: https://pantelis.github.io/virtual-internship/aiml-common/projects/nlp/finetuning-language-models-patents/index.html
+
+**Can I patent this?**
+^^^
+```{image} https://github.com/pantelis/aiml-common/blob/master/projects/nlp/finetuning-language-models-patents/images/uspto.png?raw=true
+:height: 100
+```
+
+This project teach you how to fine-tune a language model to classify patents.
+
++++
+Explore this  {fas}`arrow-right`
+:::
+
 ::::
