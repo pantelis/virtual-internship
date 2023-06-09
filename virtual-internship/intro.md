@@ -1,7 +1,3 @@
----
-title: Virtual Internship
----
-
 % The SVG rendering breaks latex builds for the GitHub badge, so only include in HTML
 ```{only} html
 [![](https://img.shields.io/github/stars/pantelis/virtual-internship?style=social)](https://github.com/pantelis/virtual-internship)
