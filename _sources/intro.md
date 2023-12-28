@@ -97,6 +97,25 @@ Explore this  {fas}`arrow-right`
 :margin: 3
 :class-body: text-center
 :class-header: bg-light text-center
+:link: https://pantelis.github.io/virtual-internship/aiml-common/projects/segment-anything-remote-sensing/index.html
+
+**Segment Anything Model for Remote Sensing**
+^^^
+```{image} https://github.com/koechslin/Swin-Transformer-Semantic-Segmentation/blob/main/resources/Hautes-Alpes/original_c3_0935_6390.png?raw=true
+:height: 100
+```
+
+This project will help you get on with infrastructure / framework level code for both the cliet (browser) as well as the cloud. The goal is to create a framework for running machine learning pipelines using webassembly components. This will allow us to run perception machine learning in the browser or in the cloud without tight coupling with specific language runtimes.  
+
++++
+Explore this  {fas}`arrow-right`
+:::
+
+
+:::{card}
+:margin: 3
+:class-body: text-center
+:class-header: bg-light text-center
 :link: https://pantelis.github.io/virtual-internship/aiml-common/projects/wasm-pipelines/index.html
 
 **WebAssembly Pipelines**
