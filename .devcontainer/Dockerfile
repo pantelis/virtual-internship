@@ -23,3 +23,12 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends inkscape
 
+
+SHELL ["/bin/bash", "-c"]
+ENV PATH="/home/vscode/.local/bin:$PATH"
+
+# Install dependencies:
+COPY . . 
+RUN pip install -r requirements.txt
+
+USER vscode

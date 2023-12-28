@@ -97,7 +97,25 @@ Explore this  {fas}`arrow-right`
 :margin: 3
 :class-body: text-center
 :class-header: bg-light text-center
-:link: https://pantelis.github.io/virtual-internship/aiml-common/projects/ns-vqa/index.html
+:link: https://pantelis.github.io/virtual-internship/aiml-common/projects/wasm-pipelines/index.html
+
+**WebAssembly Pipelines**
+^^^
+```{image} https://media.licdn.com/dms/image/D5612AQEa_NOoZrOPdA/article-cover_image-shrink_600_2000/0/1683311588503?e=1709164800&v=beta&t=hSwwuReq0AyYaMJOthyZeZn92ZOGDHzPOSV5bjr3tjg
+:height: 100
+```
+
+This project will help you get on with infrastructure / framework level code for both the cliet (browser) as well as the cloud. The goal is to create a framework for running machine learning pipelines using webassembly components. This will allow us to run perception machine learning in the browser or in the cloud without tight coupling with specific language runtimes.  
+
++++
+Explore this  {fas}`arrow-right`
+:::
+
+:::{card}
+:margin: 3
+:class-body: text-center
+:class-header: bg-light text-center
+:link: https://pantelis.github.io/virtual-internship/aiml-common/projects/ns-vqa/index.html 
 
 **Neuro-symbolic VQA**
 ^^^

@@ -1,0 +1,16 @@
+jupyter-book
+matplotlib
+numpy
+sphinxcontrib-youtube
+sphinx-terraform[markdown]
+sphinxcontrib-bibtex
+sphinx-inline-tabs
+sphinx-autobuild
+sphinxcontrib-svg2pdfconverter
+sphinxext-rediraffe
+sphinxcontrib-mermaid
+sphinxcontrib-seqdiag
+sphinx-proof
+pytest
+diagrams
+
