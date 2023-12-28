@@ -65,8 +65,8 @@ jobs:
       - name: Build the book
         shell: bash -l {0}
         run: |
-          source .venv/bin/activate
-          poetry run jupyter-book build --path-output standard virtual-internship
+          
+           jb config sphinx virtual-internship && jupyter-book build --path-output standard virtual-internship
 
       # #----------------------------------------------
       # #              Build the book for LMS
@@ -75,7 +75,7 @@ jobs:
       #   shell: bash -l {0}
       #   run: |
       #     source .venv/bin/activate
-      #     poetry run jupyter-book build --config artificial_intelligence/_config_lms.yml --path-output lms artificial_intelligence  
+      #     poetry run jupyter-book build --config virtual-internship/_config_lms.yml --path-output lms virtual-internship  
 
     # Deploy the book's HTML to gh-pages branch
       - name: GitHub Pages action
