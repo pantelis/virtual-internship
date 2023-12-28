@@ -12,6 +12,7 @@ parts:
   chapters:
   - file: aiml-common/projects/ns-vqa/index.md
   - file: aiml-common/projects/wasm-pipelines/index.md
+  - file: aiml-common/projects/segment-anything-remote-sensing/index.md
   - file: aiml-common/projects/world-models/index.md
 
 - caption: Tier-2 Projects
