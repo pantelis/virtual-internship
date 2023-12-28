@@ -104,8 +104,8 @@ Explore this  {fas}`arrow-right`
 ```{image} https://github.com/koechslin/Swin-Transformer-Semantic-Segmentation/blob/main/resources/Hautes-Alpes/original_c3_0935_6390.png?raw=true
 :height: 100
 ```
+In this project you will be asked to explore the analogous solution for computer vision. We will use the  Segmenting Anything Model (SAM) to segment sidewalks and other features from satellite imagery (remote sensing).
 
-This project will help you get on with infrastructure / framework level code for both the cliet (browser) as well as the cloud. The goal is to create a framework for running machine learning pipelines using webassembly components. This will allow us to run perception machine learning in the browser or in the cloud without tight coupling with specific language runtimes.  
 
 +++
 Explore this  {fas}`arrow-right`
